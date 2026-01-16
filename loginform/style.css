@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 150px;
+
+}
+
+.title{
+    font-family:'Pacifico';
+    color: white;
+    font-size: 50px;
+}
+
+.loginform{
+    height: 400px;
+    width:550px;
+    background-color: rgba(46, 45, 45, 0.7);
+}
+
+.namecolor{
+    color: #DB285F;
+}
+
+img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+svg{
+    height: 30px;
+    width: 30px;
+    color: white;
+    fill: white;
+}
+
+.loginheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+label{
+    font-size: 30px;
+    color:white
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    height: 100%;
+}
+
+.logoutbtn{
+    border: 4px solid white;
+    fill:#DB285F ;
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+}
+
+input{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 250px;
+}
+
+.forminputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.formsvgs{
+    fill: #DB285F;
+}
+
+.inputfields{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer{
+    color: white;
+}
