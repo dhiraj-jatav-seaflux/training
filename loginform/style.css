@@ -20,15 +20,18 @@ html,body{
 }
 
 .title{
-    font-family:'Pacifico';
+    font-family: 'Great Vibes', cursive;
     color: white;
     font-size: 50px;
+    letter-spacing: 3px;
+    word-spacing: 8px;
 }
 
 .login-form{
     height: 400px;
     width:550px;
-    background-color: rgba(46, 45, 45, 0.7);
+    background-color: rgba(55, 54, 54, 0.581);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);   
 }
 
 .name-color{
@@ -110,4 +113,10 @@ input{
 
 .footer{
     color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user-inputs{
+    width: 420px;
+    height: 42px;
 }
