@@ -6,44 +6,36 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-
 </head>
 <body>
-
     <div class="main">
         <img src="https://images.unsplash.com/photo-1605515223642-fd67abd879ab?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-
         <div class="header">
-             <h1 class="title"> <span class="namecolor">M</span>odish <span class="namecolor">L</span>ogin <span class="namecolor">F</span>orm</h1> 
+             <h1 class="title"> <span class="name-color">M</span>odish <span class="name-color">L</span>ogin <span class="name-color">F</span>orm</h1> 
         </div>
-
-        <div class="loginform">
+        <div class="login-form">
             <form action="">
-                <div class="loginheader">
-                    <label for="">Login Here</label><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M192 512L192 334.4C197.2 335.4 202.5 336 208 336L224 336L224 512C224 520.8 216.8 528 208 528C199.2 528 192 520.8 192 512zM208 288C190.3 288 176 273.7 176 256L176 232C176 165.7 229.7 112 296 112L344 112C396.5 112 441.1 145.7 457.4 192.7C454.3 192.2 451.2 192 448 192C428 192 410.1 201.2 398.3 215.6C389.3 210.7 378.9 208 368 208C352.9 208 339 213.3 328 222C317 213.2 303.1 208 288 208L248 208C234.7 208 224 218.7 224 232C224 245.3 234.7 256 248 256L288 256C296.8 256 304 263.2 304 272C304 280.8 296.8 288 288 288L208 288zM128 256L128 256C128 274 134 290.6 144 304L144 512C144 547.3 172.7 576 208 576C243.3 576 272 547.3 272 512L272 430C277.1 431.3 282.5 432 288 432C313.3 432 335.2 417.3 345.6 396C352.6 398.6 360.1 400 368 400C388 400 405.9 390.8 417.7 376.4C426.7 381.3 437.1 384 448 384C483.3 384 512 355.3 512 320L512 232C512 139.2 436.8 64 344 64L296 64C203.2 64 128 139.2 128 232L128 256zM464 320C464 328.8 456.8 336 448 336C439.2 336 432 328.8 432 320L432 256C432 247.2 439.2 240 448 240C456.8 240 464 247.2 464 256L464 320zM288 336C293.5 336 298.9 335.3 304 334L304 368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368L272 336L288 336zM352 312L352 272C352 263.2 359.2 256 368 256C376.8 256 384 263.2 384 272L384 336C384 344.8 376.8 352 368 352C359.2 352 352 344.8 352 336L352 312z"/></svg>
+                <div class="login-header">
+                    <label for="">Login Here</label><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M192 512L192 334.4C197.2 335.4 202.5 336 208 336L224 336L224 512C224 520.8 216.8 528 208 528C199.2 528 192 520.8 192 512zM208 288C190.3 288 176 273.7 176 256L176 232C176 165.7 229.7 112 296 112L344 112C396.5 112 441.1 145.7 457.4 192.7C454.3 192.2 451.2 192 448 192C428 192 410.1 201.2 398.3 215.6C389.3 210.7 378.9 208 368 208C352.9 208 339 213.3 328 222C317 213.2 303.1 208 288 208L248 208C234.7 208 224 218.7 224 232C224 245.3 234.7 256 248 256L288 256C296.8 256 304 263.2 304 272C304 280.8 296.8 288 288 288L208 288zM128 256L128 256C128 274 134 290.6 144 304L144 512C144 547.3 172.7 576 208 576C243.3 576 272 547.3 272 512L272 430C277.1 431.3 282.5 432 288 432C313.3 432 335.2 417.3 345.6 396C352.6 398.6 360.1 400 368 400C388 400 405.9 390.8 417.7 376.4C426.7 381.3 437.1 384 448 384C483.3 384 512 355.3 512 320L512 232C512 139.2 436.8 64 344 64L296 64C203.2 64 128 139.2 128 232L128 256zM464 320C464 328.8 456.8 336 448 336C439.2 336 432 328.8 432 320L432 256C432 247.2 439.2 240 448 240C456.8 240 464 247.2 464 256L464 320zM288 336C293.5 336 298.9 335.3 304 334L304 368C304 376.8 296.8 384 288 384C279.2 384 272 376.8 272 368L272 336L288 336zM352 312L352 272C352 263.2 359.2 256 368 256C376.8 256 384 263.2 384 272L384 336C384 344.8 376.8 352 368 352C359.2 352 352 344.8 352 336L352 312z"/></svg>
                 </div>
-
-                <div class="inputfields">
-                    <div class="forminputs">
-                        <svg class="formsvgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
-                        <input type="text" placeholder="Email">
+                <div class="input-fields">
+                    <div class="form-inputs">
+                        <svg class="form-svgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M112 128C85.5 128 64 149.5 64 176C64 191.1 71.1 205.3 83.2 214.4L291.2 370.4C308.3 383.2 331.7 383.2 348.8 370.4L556.8 214.4C568.9 205.3 576 191.1 576 176C576 149.5 554.5 128 528 128L112 128zM64 260L64 448C64 483.3 92.7 512 128 512L512 512C547.3 512 576 483.3 576 448L576 260L377.6 408.8C343.5 434.4 296.5 434.4 262.4 408.8L64 260z"/></svg>
+                        <input class="user-inputs" type="email" placeholder="Email">
                     </div>
-                    <div class="forminputs">
-                        <svg class="formsvgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M416 160C416 124.7 444.7 96 480 96C515.3 96 544 124.7 544 160L544 192C544 209.7 558.3 224 576 224C593.7 224 608 209.7 608 192L608 160C608 89.3 550.7 32 480 32C409.3 32 352 89.3 352 160L352 224L192 224C156.7 224 128 252.7 128 288L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 288C512 252.7 483.3 224 448 224L416 224L416 160z"/></svg>
-                        <input type="password" placeholder="Password">
+                    <div class="form-inputs">
+                        <svg class="form-svgs" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M416 160C416 124.7 444.7 96 480 96C515.3 96 544 124.7 544 160L544 192C544 209.7 558.3 224 576 224C593.7 224 608 209.7 608 192L608 160C608 89.3 550.7 32 480 32C409.3 32 352 89.3 352 160L352 224L192 224C156.7 224 128 252.7 128 288L128 512C128 547.3 156.7 576 192 576L448 576C483.3 576 512 547.3 512 512L512 288C512 252.7 483.3 224 448 224L416 224L416 160z"/></svg>
+                        <input class="user-inputs" type="password" placeholder="Password">
                     </div>
                 </div>
-
-                <div class="logoutdiv">
-                    <svg class="logoutbtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M569 337C578.4 327.6 578.4 312.4 569 303.1L425 159C418.1 152.1 407.8 150.1 398.8 153.8C389.8 157.5 384 166.3 384 176L384 256L272 256C245.5 256 224 277.5 224 304L224 336C224 362.5 245.5 384 272 384L384 384L384 464C384 473.7 389.8 482.5 398.8 486.2C407.8 489.9 418.1 487.9 425 481L569 337zM224 160C241.7 160 256 145.7 256 128C256 110.3 241.7 96 224 96L160 96C107 96 64 139 64 192L64 448C64 501 107 544 160 544L224 544C241.7 544 256 529.7 256 512C256 494.3 241.7 480 224 480L160 480C142.3 480 128 465.7 128 448L128 192C128 174.3 142.3 160 160 160L224 160z"/></svg>
+                <div class="logout-div">
+                    <svg class="logout-btn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M569 337C578.4 327.6 578.4 312.4 569 303.1L425 159C418.1 152.1 407.8 150.1 398.8 153.8C389.8 157.5 384 166.3 384 176L384 256L272 256C245.5 256 224 277.5 224 304L224 336C224 362.5 245.5 384 272 384L384 384L384 464C384 473.7 389.8 482.5 398.8 486.2C407.8 489.9 418.1 487.9 425 481L569 337zM224 160C241.7 160 256 145.7 256 128C256 110.3 241.7 96 224 96L160 96C107 96 64 139 64 192L64 448C64 501 107 544 160 544L224 544C241.7 544 256 529.7 256 512C256 494.3 241.7 480 224 480L160 480C142.3 480 128 465.7 128 448L128 192C128 174.3 142.3 160 160 160L224 160z"/></svg>
                 </div>
             </form>
         </div>
-
         <div class="footer">
-            <p> © 2018 Modish Login Form. All rights reserved. | Designed by <span class="namecolor">W3layouts</span></p>
+            <p> © 2018 Modish Login Form. All rights reserved. | Designed by <span class="name-color">W3layouts</span></p>
         </div>
     </div>
-    
 </body>
 </html>
