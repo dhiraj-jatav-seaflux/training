@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Practice</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="h-screen w-full flex bg-[#C4E6FA] items-center justify-center">
+      <div class="bg-white h-[87%] w-[35%] rounded-l-2xl p-10">
+        <div class="h-full w-full space-y-10">
+          <p class="text-4xl text-[#4C56CF]">General Information</p>
+          <select class="border p-4 w-full text-gray-500 rounded-md" name="title" id="">
+            <option value="" disabled selected hidden>Title</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+          </select>
+          <div class="flex justify-between">
+            <input
+              class="border w-[47%] p-4 rounded-md"
+              type="text"
+              placeholder="First Name"
+            />
+            <input
+              class="border w-[47%] p-4 rounded-md"
+              type="text"
+              placeholder="Last Name"
+            />
+          </div>
+          <select class="border w-full p-4 text-gray-500 rounded-md" name="position" id="">
+            <option value="" disabled selected hidden>Position</option>
+            <option value="position1">Position 1</option>
+            <option value="position2">Position 2</option>
+          </select>
+          <div>
+            <input
+              class="w-full border p-4 rounded-md"
+              type="text"
+              placeholder="Position"
+            />
+          </div>
+          <div class="flex justify-between">
+            <input
+              class="border w-[47%] p-4 rounded-md"
+              type="text"
+              placeholder="Business Arena"
+            />
+            <select
+              class="text-gray-500 border p-5 w-[47%] rounded-md"
+              name="employees"
+              id=""
+            >
+              <option value="" disabled selected hidden>
+                Number of Employees
+              </option>
+              <option value="1-10">1-10</option>
+              <option value="11-50">11-50</option
+              <option value="51-200">51-200</option>
+              <option value="201-500">201-500</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="bg-[#4C56CF] h-[87%] w-[35%] rounded-r-2xl p-10">
+        <div class="h-full w-full space-y-8 text-white mt-2">
+          <p class="text-4xl text-white">Contact Details</p>
+          <input
+            class="w-full p-4 border rounded-md"
+            type="text"
+            placeholder="Street + Nr"
+          />
+          <input
+            class="w-full p-4 border rounded-md mt-1"
+            type="text"
+            placeholder="Additional Information"
+          />
+          <div class="flex justify-between mt-2">
+            <input
+              class="p-4 w-[41%] border rounded-md"
+              type="text"
+              placeholder="Zip code"
+            />
+            <input class="p-4 w-[53%] border rounded-md" type="text" placeholder="Place" />
+          </div>
+          <input class="w-full border p-4 mt-1 rounded-md" type="text" placeholder="Country" />
+          <div class="flex justify-between mt-2">
+            <input
+              class="p-4 w-[41%] border rounded-md"
+              type="text"
+              placeholder="Code +"
+            />
+            <input
+              class="p-4 w-[53%] border rounded-md"
+              type="text"
+              placeholder="Phone Number"
+            />
+          </div>
+          <input
+            class="w-full border p-4 rounded-md"
+            type="email"
+            placeholder="Your Email"
+          />
+          <div class="flex space-x-6 items-center px-1">
+            <input
+              class="h-5 w-5 rounded-md"
+              type="checkbox"
+              value="accepting-terms"
+            />
+            <p class="text-xl">
+              I do accept the
+              <span><a class="underline" href="">Terms & Conditions</a></span>
+              of your site.
+            </p>
+          </div>
+          <button
+            class="bg-white border-none decoration-0 text-black py-3 px-7 rounded-md text mt-2"
+          >
+            REGISTER
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
