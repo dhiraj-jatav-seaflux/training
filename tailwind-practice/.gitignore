@@ -2,7 +2,6 @@
 node_modules/
 
 # Tailwind generated CSS (ignore only the file, not the folder)
-src/output.css
 
 # Logs
 npm-debug.log*
