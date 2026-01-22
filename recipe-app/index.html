@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-red-200">
+    <div class="h-full bg-red-200 w-full p-2 place-items-center">
+      <form
+        class="border bg-white border-black flex flex-col space-y-2 justify-center p-4 rounded-xl"
+        action=""
+        id="recipe-form"
+      >
+        <label class="text-left text-xl font-semibold" for=""
+          >Recipe name :</label
+        >
+        <input
+          class="name border p-2 rounded-md w-150"
+          name="name"
+          type="text"
+          placeholder="Enter the name of the recipe"
+          required
+        />
+        <label class="text-left text-xl font-semibold" for=""
+          >Recipe type :</label
+        >
+        <input
+          class="type border p-2 rounded-md w-150"
+          name="type"
+          type="text"
+          placeholder="Enter the type of the recipe"
+          required
+        />
+        <label class="text-left text-xl font-semibold" for=""
+          >Enter recipe description :</label
+        >
+        <textarea
+          class="description border p-2 rounded-md w-full"
+          name="description"
+          type="text"
+          placeholder="Enter the recipe description"
+          required
+        ></textarea>
+        <button
+          class="border p-2 m-2 rounded-xl bg-green-500"
+          type="submit"
+          id="submit-btn"
+        >
+          Add Recipe
+        </button>
+      </form>
+      <div
+        class="recipes w-full mx-auto m-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        <div class="recipe">
+          <h3 class="recipe-name"></h3>
+          <p class="recipe-type"></p>
+          <p class="recipe-description"></p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
