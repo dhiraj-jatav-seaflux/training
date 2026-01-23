@@ -6,59 +6,116 @@
     <title>Recipe App</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-red-200">
-    <div class="h-full bg-red-200 w-full p-2 place-items-center">
-      <form
-        class="border bg-white border-black flex flex-col space-y-2 justify-center p-4 rounded-xl"
-        action=""
-        id="recipe-form"
-      >
-        <label class="text-left text-xl font-semibold" for=""
-          >Recipe name :</label
-        >
-        <input
-          class="name border p-2 rounded-md w-150"
-          name="name"
-          type="text"
-          placeholder="Enter the name of the recipe"
-          required
-        />
-        <label class="text-left text-xl font-semibold" for=""
-          >Recipe type :</label
-        >
-        <input
-          class="type border p-2 rounded-md w-150"
-          name="type"
-          type="text"
-          placeholder="Enter the type of the recipe"
-          required
-        />
-        <label class="text-left text-xl font-semibold" for=""
-          >Enter recipe description :</label
-        >
-        <textarea
-          class="description border p-2 rounded-md w-full"
-          name="description"
-          type="text"
-          placeholder="Enter the recipe description"
-          required
-        ></textarea>
-        <button
-          class="border p-2 m-2 rounded-xl bg-green-500"
-          type="submit"
-          id="submit-btn"
-        >
-          Add Recipe
-        </button>
-      </form>
+  <body
+    class="h-screen overflow-hidden bg-linear-to-br from-purple-600 via-indigo-600 to-blue-600"
+  >
+    <div class="flex h-full w-full">
       <div
-        class="recipes w-full mx-auto m-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        class="w-full sm:w-1/3 lg:w-1/4 bg-white bg-opacity-10 backdrop-blur-md p-6 flex flex-col gap-6 overflow-y-auto border-r border-white border-opacity-20"
       >
-        <div class="recipe">
-          <h3 class="recipe-name"></h3>
-          <p class="recipe-type"></p>
-          <p class="recipe-description"></p>
+        <a
+          href="home.html"
+          class="flex items-center gap-2 font-semibold text-[#986EFA] hover:translate-x-1 transition-transform duration-300"
+        >
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Go to home page
+        </a>
+        <div
+          class="bg-white bg-opacity-20 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white border-opacity-30"
+        >
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold text-[#986EFA] mb-2">
+              Add New Recipe
+            </h2>
+            <p class="text-black text-opacity-90 text-sm">
+              Share your culinary masterpiece.
+            </p>
+          </div>
+          <form id="recipe-form" class="flex flex-col space-y-5">
+            <div>
+              <label
+                class="block text-black font-semibold mb-2 text-sm"
+                for="recipe-name"
+              >
+                Recipe Name
+              </label>
+              <input
+                id="recipe-name"
+                class="border p-3 rounded-xl w-full transition-all bg-white bg-opacity-90 focus:bg-opacity-100 focus:ring-4 focus:ring-purple-300 focus:outline-none"
+                name="name"
+                type="text"
+                placeholder="e.g., Chocolate Cake"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-black font-semibold mb-2 text-sm"
+                for="recipe-type"
+              >
+                Recipe Type
+              </label>
+              <input
+                id="recipe-type"
+                class="border p-3 rounded-xl w-full transition-all bg-white bg-opacity-90 focus:bg-opacity-100 focus:ring-4 focus:ring-purple-300 focus:outline-none"
+                name="type"
+                type="text"
+                placeholder="e.g., Dessert"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-black font-semibold mb-2 text-sm"
+                for="recipe-description"
+              >
+                Description
+              </label>
+              <textarea
+                id="recipe-description"
+                class="border p-3 rounded-xl w-full transition-all bg-white bg-opacity-90 focus:bg-opacity-100 focus:ring-4 focus:ring-purple-300 focus:outline-none resize-none"
+                rows="4"
+                name="description"
+                placeholder="Describe your recipe..."
+                required
+              ></textarea>
+            </div>
+            <button
+              class="mt-4 bg-linear-to-r from-purple-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+              type="submit"
+              id="submit-btn"
+            >
+              Add Recipe
+            </button>
+          </form>
         </div>
+      </div>
+      <div
+        class="flex-1 bg-linear-to-br from-gray-50 to-gray-100 p-8 overflow-y-auto"
+      >
+        <div class="mb-8">
+          <h1
+            class="text-4xl font-bold mb-2 bg-linear-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent"
+          >
+            My Recipes
+          </h1>
+          <p class="text-gray-600">Discover and manage your favorite dishes</p>
+        </div>
+        <div
+          class="recipes grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        ></div>
       </div>
     </div>
     <script src="./script.js"></script>
