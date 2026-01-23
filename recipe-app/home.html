@@ -3,92 +3,165 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe app</title>
+    <title>Recipe App</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body
-    class="min-h-screen w-full bg-linear-to-br from-orange-100 via-amber-50 to-yellow-50"
+    class="h-screen overflow-hidden bg-linear-to-br from-purple-600 via-indigo-600 to-blue-600"
   >
-    <div
-      class="min-h-screen w-full flex items-center justify-center p-4 relative overflow-hidden"
-    >
+    <div class="flex h-full w-full">
       <div
-        class="bg-white w-full max-w-6xl px-6 py-10 sm:px-12 sm:py-11 space-y-5 flex flex-col items-center justify-center rounded-3xl shadow-2xl relative z-10 border-4 border-orange-100"
+        class="w-full sm:w-1/3 lg:w-1/4 bg-white bg-opacity-10 backdrop-blur-md p-6 flex flex-col gap-6 overflow-y-auto border-r border-white border-opacity-20"
       >
-        <div
-          class="bg-linear-to-r from-purple-600 via-indigo-600 to-blue-600 w-full py-10 sm:py-20 flex items-center justify-center rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 relative overflow-hidden"
-        >
-          <div class="absolute inset-0 opacity-10">
-            <div
-              class="absolute inset-0"
-              style="
-                background-image: repeating-linear-gradient(
-                  45deg,
-                  transparent,
-                  transparent 10px,
-                  rgba(255, 255, 255, 0.1) 10px,
-                  rgba(255, 255, 255, 0.1) 20px
-                );
-              "
-            ></div>
-          </div>
-          <h1
-            class="relative text-center text-3xl sm:text-5xl lg:text-7xl text-white font-bold tracking-tight drop-shadow-lg"
-          >
-            HOMEMADE COOKING
-          </h1>
-        </div>
-        <div
-          class="bg-white w-full py-8 sm:py-12 flex items-center justify-center rounded-2xl shadow-lg border-2 border-orange-200"
-        >
-          <h2
-            class="text-xl sm:text-3xl lg:text-5xl text-gray-800 font-semibold text-center px-4"
-          >
-            Quick and Easy Recipes
-          </h2>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full my-6">
-          <div
-            class="flex flex-col items-center gap-3 p-6 bg-linear-to-br from-orange-50 to-white rounded-xl border-2 border-orange-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <img
-              class="rounded-xl"
-              src="https://images.unsplash.com/photo-1606787366850-de6330128bfc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <div
-            class="flex flex-col items-center gap-3 p-6 bg-linear-to-br from-amber-50 to-white rounded-xl border-2 border-amber-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <img
-              class="rounded-xl"
-              src="https://plus.unsplash.com/premium_photo-1698867575634-d39ef95fa6a7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-          <div
-            class="flex flex-col items-center gap-3 p-6 bg-linear-to-br from-red-50 to-white rounded-xl border-2 border-red-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-          >
-            <img
-              class="rounded-xl"
-              src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
-          </div>
-        </div>
         <a
-          class="group relative bg-linear-to-r from-purple-600 via-indigo-600 to-blue-600 text-white px-8 py-4 sm:px-12 sm:py-5 text-lg sm:text-2xl font-bold rounded-2xl hover:from-purple-700 hover:to-indigo-800 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-110 flex items-center gap-3 overflow-hidden"
           href="index.html"
+          class="flex items-center gap-2 font-semibold text-[#986EFA] hover:translate-x-1 transition-transform duration-300"
         >
-          <span
-            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"
-          ></span>
-          <span class="relative">Explore Recipes</span>
+          <svg
+            class="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          Go to home page
         </a>
-        <p class="text-gray-500 text-sm mt-5">
-          Start your culinary journey today!
-        </p>
+        <div
+          class="bg-white bg-opacity-20 backdrop-blur-lg rounded-2xl p-6 shadow-2xl border border-white border-opacity-30"
+        >
+          <div class="mb-6">
+            <h2 class="text-2xl font-bold text-[#986EFA] mb-2">
+              Add New Recipe
+            </h2>
+            <p class="text-black text-opacity-90 text-sm">
+              Share your culinary masterpiece.
+            </p>
+          </div>
+          <form id="recipe-form" class="flex flex-col space-y-5">
+            <div>
+              <label
+                class="block text-black font-semibold mb-2 text-sm"
+                for="recipe-name"
+              >
+                Recipe Name
+              </label>
+              <input
+                id="recipe-name"
+                class="border p-3 rounded-xl w-full transition-all bg-white bg-opacity-90 focus:bg-opacity-100 focus:ring-4 focus:ring-purple-300 focus:outline-none"
+                name="name"
+                type="text"
+                placeholder="e.g., Chocolate Cake"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-black font-semibold mb-2 text-sm"
+                for="recipe-type"
+              >
+                Recipe Type
+              </label>
+              <input
+                id="recipe-type"
+                class="border p-3 rounded-xl w-full transition-all bg-white bg-opacity-90 focus:bg-opacity-100 focus:ring-4 focus:ring-purple-300 focus:outline-none"
+                name="type"
+                type="text"
+                placeholder="e.g., Dessert"
+                required
+              />
+            </div>
+            <div>
+              <label
+                class="block text-black font-semibold mb-2 text-sm"
+                for="recipe-description"
+              >
+                Description
+              </label>
+              <textarea
+                id="recipe-description"
+                class="border p-3 rounded-xl w-full transition-all bg-white bg-opacity-90 focus:bg-opacity-100 focus:ring-4 focus:ring-purple-300 focus:outline-none resize-none"
+                rows="4"
+                name="description"
+                placeholder="Describe your recipe..."
+                required
+              ></textarea>
+            </div>
+            <button
+              class="mt-4 bg-linear-to-r from-purple-500 to-indigo-600 text-white font-semibold py-3 px-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+              type="submit"
+              id="submit-btn"
+            >
+              Add Recipe
+            </button>
+          </form>
+        </div>
+      </div>
+      <div
+        class="flex-1 bg-linear-to-br from-gray-50 to-gray-100 p-8 overflow-y-auto"
+      >
+        <div class="mb-8">
+          <h1
+            class="text-4xl font-bold mb-2 bg-linear-to-r from-purple-600 to-indigo-600 bg-clip-text text-transparent"
+          >
+            My Recipes
+          </h1>
+          <p class="text-gray-600">Discover and manage your favorite dishes</p>
+        </div>
+        <div
+          class="recipes grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        ></div>
+        <template class="" id="recipe-template">
+          <div
+            class="recipe bg-white rounded-2xl shadow-lg p-6 flex flex-col gap-4 border border-gray-100"
+          >
+            <div class="flex items-center gap-2">
+              <div
+                class="w-12 h-12 rounded-full bg-linear-to-br from-purple-400 to-indigo-600 flex items-center justify-center shrink-0 shadow-md"
+              >
+                <svg
+                  class="w-6 h-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                  />
+                </svg>
+              </div>
+              <h3 class="recipe-name text-2xl font-bold text-gray-800"></h3>
+            </div>
+            <span
+              class="recipe-type ml-1 w-fit text-md font-bold bg-purple-100 text-purple-700 px-3 py-1 rounded-full uppercase"
+            ></span>
+            <p class="recipe-description text-xl ml-3 text-gray-600 flex-1"></p>
+            <div class="actions flex gap-3 mt-auto pt-4">
+              <button
+                data-action="edit"
+                class="flex-1 bg-linear-to-r from-amber-400 to-orange-500 text-white py-2 rounded-lg hover:from-amber-500 hover:to-orange-600 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
+              >
+                Edit
+              </button>
+              <button
+                data-action="delete"
+                class="flex-1 bg-linear-to-r from-red-500 to-pink-600 text-white py-2 rounded-lg hover:from-red-600 hover:to-pink-700 transition-all duration-300 font-semibold shadow-md hover:shadow-lg"
+              >
+                Delete
+              </button>
+            </div>
+          </div>
+        </template>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
