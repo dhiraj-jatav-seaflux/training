@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe app</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="min-h-screen w-full bg-linear-to-br from-orange-100 via-amber-50 to-yellow-50"
+  >
+    <div
+      class="min-h-screen w-full flex items-center justify-center p-4 relative overflow-hidden"
+    >
+      <div
+        class="bg-white w-full max-w-6xl px-6 py-10 sm:px-12 sm:py-11 space-y-5 flex flex-col items-center justify-center rounded-3xl shadow-2xl relative z-10 border-4 border-orange-100"
+      >
+        <div
+          class="bg-linear-to-r from-purple-600 via-indigo-600 to-blue-600 w-full py-10 sm:py-20 flex items-center justify-center rounded-2xl shadow-2xl transform hover:scale-105 transition-transform duration-500 relative overflow-hidden"
+        >
+          <div class="absolute inset-0 opacity-10">
+            <div
+              class="absolute inset-0"
+              style="
+                background-image: repeating-linear-gradient(
+                  45deg,
+                  transparent,
+                  transparent 10px,
+                  rgba(255, 255, 255, 0.1) 10px,
+                  rgba(255, 255, 255, 0.1) 20px
+                );
+              "
+            ></div>
+          </div>
+          <h1
+            class="relative text-center text-3xl sm:text-5xl lg:text-7xl text-white font-bold tracking-tight drop-shadow-lg"
+          >
+            HOMEMADE COOKING
+          </h1>
+        </div>
+        <div
+          class="bg-white w-full py-8 sm:py-12 flex items-center justify-center rounded-2xl shadow-lg border-2 border-orange-200"
+        >
+          <h2
+            class="text-xl sm:text-3xl lg:text-5xl text-gray-800 font-semibold text-center px-4"
+          >
+            Quick and Easy Recipes
+          </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 w-full my-6">
+          <div
+            class="flex flex-col items-center gap-3 p-6 bg-linear-to-br from-orange-50 to-white rounded-xl border-2 border-orange-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+          >
+            <img
+              class="rounded-xl"
+              src="./images/photo-1606787366850-de6330128bfc.avif"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col items-center gap-3 p-6 bg-linear-to-br from-amber-50 to-white rounded-xl border-2 border-amber-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+          >
+            <img
+              class="rounded-xl"
+              src="./images/premium_photo-1698867575634-d39ef95fa6a7.avif"
+              alt=""
+            />
+          </div>
+          <div
+            class="flex flex-col items-center gap-3 p-6 bg-linear-to-br from-red-50 to-white rounded-xl border-2 border-red-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+          >
+            <img
+              class="rounded-xl"
+              src="./images/photo-1563379926898-05f4575a45d8.avif"
+              alt=""
+            />
+          </div>
+        </div>
+        <a
+          class="group relative bg-linear-to-r from-purple-600 via-indigo-600 to-blue-600 text-white px-8 py-4 sm:px-12 sm:py-5 text-lg sm:text-2xl font-bold rounded-2xl hover:from-purple-700 hover:to-indigo-800 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-110 flex items-center gap-3 overflow-hidden"
+          href="home.html"
+        >
+          <span
+            class="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+          ></span>
+          <span class="relative">Explore Recipes</span>
+        </a>
+        <p class="text-gray-500 text-sm mt-5">
+          Start your culinary journey today!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
