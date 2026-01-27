@@ -1,0 +1,59 @@
+class Solution {
+    public List<Integer> luckyNumbers(int[][] matrix) {
+        List<Integer> ans = new ArrayList<>();
+
+        for(int i = 0; i<matrix.length; i++){
+            for(int j = 0; j<matrix[i].length; j++){
+                if(checkLeft(i,j,matrix) && checkRight(i,j,matrix) && checkTop(i,j,matrix) && checkBottom(i,j,matrix)){
+                    ans.add(matrix[i][j]);
+                }
+            }
+        }
+
+        return ans;
+    }
+
+    private boolean checkLeft(int i, int j, int[][] matrix){
+        int num = matrix[i][j];
+
+        while(j>=0){
+            if(matrix[i][j]<num) return false;
+            j--;
+        }
+
+        return true;
+    }
+
+    private boolean checkRight(int i, int j, int[][] matrix){
+        int num = matrix[i][j];
+
+        while(j<matrix[i].length){
+            if(matrix[i][j]<num) return false;
+            j++;
+        }
+
+        return true;
+    }
+
+    private boolean checkTop(int i, int j, int[][] matrix){
+        int num = matrix[i][j];
+
+        while(i>=0){
+            if(matrix[i][j]>num) return false;
+            i--;
+        }
+
+        return true;
+    }
+
+    private boolean checkBottom(int i, int j, int[][] matrix){
+        int num = matrix[i][j];
+
+        while(i<matrix.length){
+            if(matrix[i][j]>num) return false;
+            i++; 
+        }
+
+        return true;
+    }
+}
